@@ -88,7 +88,7 @@ img {
 
 .container .repodata .created a {
   text-decoration: none;
-  color: crimson;
+  color: #0f54d6;
   font-weight: bold;
 }
 
@@ -103,6 +103,9 @@ img {
     font-size: 10px;
     font-weight: 500;
     text-decoration: underline;
+  }
+  .created a {
+    font-size: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */
