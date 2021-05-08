@@ -60,35 +60,30 @@ img {
 }
 
 .container .repodata .created {
-  padding: 10px 20px;
+  padding: 10px 10px;
   margin-bottom: 10px;
   background-color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: relative;
 }
 
 .container .repodata .created a {
-  position: absolute;
-  top: 50%;
-  right: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   text-decoration: none;
   color: crimson;
   font-weight: bold;
 }
 
-@media screen and (max-width: 400px) {
-  .created a {
-    margin-left: 10px;
+@media (max-width: 400px) {
+  .container {
+    margin: 70px 15px;
   }
 }
 /*# sourceMappingURL=style.css.map */
