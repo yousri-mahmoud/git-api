@@ -29,9 +29,12 @@ const gitRepo = function () {
     )
       .then((response) => response.json())
       .then((repos) => {
+        //console.log(reject);
         repos.forEach((repo) => {
+          showData.classList.remove("red");
           let myNewDiv = document.createElement("div"),
-            textName = document.createTextNode(`${repo.name}`);
+            textName = document.createElement(`h4`);
+          textName.innerHTML = `${repo.name}`;
 
           myNewDiv.appendChild(textName);
 
@@ -50,6 +53,10 @@ const gitRepo = function () {
           showData.appendChild(myNewDiv);
           myNewDiv.className = "created";
         });
+      })
+      .catch(function () {
+        showData.innerHTML = `Username Unavailable`;
+        showData.classList.add("red");
       });
   }
 };
