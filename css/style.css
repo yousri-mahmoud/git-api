@@ -85,4 +85,10 @@ img {
   color: crimson;
   font-weight: bold;
 }
+
+@media screen and (max-width: 400px) {
+  .created a {
+    margin-left: 10px;
+  }
+}
 /*# sourceMappingURL=style.css.map */

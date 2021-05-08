@@ -65,3 +65,10 @@ img {
     }
   }
 }
+@media screen and(max-width:400px) {
+  .created {
+    a {
+      margin-left: 10px;
+    }
+  }
+}
